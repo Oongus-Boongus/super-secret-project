@@ -1,0 +1,83 @@
+/* Password Page and General Styles */
+body {
+    background-color: black;
+    color: pink;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: pink;
+    text-align: left;
+    font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+input {
+    text-align: center;
+    font-size: 3vh;
+    width: 80%;
+    height: 2.5vh;
+    background-color: black;
+    border: none;
+    color: violet;
+    caret-color: violet;
+}
+
+::placeholder {
+    color: pink;
+    opacity: 0.5;
+}
+
+:focus {
+    outline: none;
+}
+
+.wide_div {
+    /* border: 3px solid green; */
+    width: 100%;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+button {
+    background-color: pink;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    color: black;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+}
+
+button:active {
+  background-color: violet;
+}
+
+/* Jinnie Page */
+#dialog_box {
+    border-color: pink;
+    border-radius: 25px;
+    border-style: dotted;
+    border-width: 10px;
+
+    width: 80%;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0%);
+    margin: 0 auto;
+    
+}
+
+#jinnie_div {        
+    margin-top: 70%;
+}
