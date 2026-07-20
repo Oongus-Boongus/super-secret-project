@@ -1,17 +1,22 @@
 /* Password Page and General Styles */
+@font-face {
+    font-family: 'Simply Playful';
+    src: url('../assets/simply_playful.otf');
+}
+
 body {
     background-color: black;
     color: pink;
     text-align: center;
     font-size: 2.5vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Simply Playful';
 }
 
 p {
     color: pink;
     text-align: left;
     font-size: 3vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Simply Playful';
     padding: 20px;
 }
 
@@ -29,6 +34,7 @@ input {
 ::placeholder {
     color: pink;
     opacity: 0.5;
+    font-family: 'Simply Playful';
 }
 
 :focus {
@@ -69,6 +75,8 @@ button:active {
     border-style: dotted;
     border-width: 10px;
 
+    background-color: black;
+
     width: 80%;
     position: fixed;
     left: 50%;
@@ -79,5 +87,28 @@ button:active {
 }
 
 #jinnie_div {        
-    margin-top: 70%;
+    margin-top: 50%;
+}
+
+footer {
+    width: 80%;
+    font-size: 1.8vh;
+    position: fixed;
+    bottom: 3%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
 }
