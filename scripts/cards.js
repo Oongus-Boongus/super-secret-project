@@ -20,6 +20,7 @@ if (localStorage.getItem("lockpicks") === null)
     lockpicks = 0;
 else
     lockpicks = localStorage.getItem("lockpicks");
+    lockpicks = Number(lockpicks);
 
 // Update the counters at the top of the page
 let unlocks = 0;
@@ -69,6 +70,7 @@ for (let i = 0; i < 50; i++) {
             
             // If the unlock is confirmed, mark it as unlocked, save that state, and go to the zoomed version first
             if (is_unlock_confirmed) {
+                is_unlock_confirmed = false;
                 card_states[current_cell_index] = true;
                 localStorage.setItem("card_states", JSON.stringify(card_states));
 
