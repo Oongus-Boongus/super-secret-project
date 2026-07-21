@@ -10,7 +10,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 	stopConfetti = stopConfettiInner;
 	toggleConfetti = toggleConfettiInner;
 	removeConfetti = removeConfettiInner;
-	var colors = ["rgb(190, 37, 217)", "rgb(249, 77, 157)", "rgb(100, 61, 242)"]
+	var colors = ["#ffcfdf", "#ffaab7", "#ff94b0"]
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var particles = [];
@@ -44,7 +44,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 		if (canvas === null) {
 			canvas = document.createElement("canvas");
 			canvas.setAttribute("id", "confetti-canvas");
-			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:absolute");
+			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:absolute;opacity:0.9");
 			document.body.appendChild(canvas);
 			canvas.width = width;
 			canvas.height = height;
