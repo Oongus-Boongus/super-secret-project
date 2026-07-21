@@ -71,8 +71,9 @@ document.addEventListener("click", function (evt) {
         typeWriter()
     }
 
-    else if (can_dialog_start && !is_scrolling && current_line >= dialog_lines.length - 1)
+    // Go to cards page if the dialog is done
+    else if (can_dialog_start && !is_scrolling && current_line >= dialog_lines.length - 1) {
+        localStorage.setItem("hasSeenCutscene", true); // Set flag so that user doesn't rewatch the cutscene
         document.location.href = "cards.html";
-
-    // If the text is done, advance to the next page
+    }
 }, true);

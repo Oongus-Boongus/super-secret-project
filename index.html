@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Shhh Secrets!!</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
         <link rel="stylesheet" href="styles/main.css">
     </head>
 
@@ -20,6 +21,11 @@
         
     </body>
     <script>
+        // If the cutscene flag is true, skip to the cards page
+        if (localStorage.getItem("hasSeenCutscene"))
+            document.location.href = "cards.html";
+
+        // Check the password
         let password_box = document.getElementById("input_box")
 
         document.getElementById("enter").onclick = function () {

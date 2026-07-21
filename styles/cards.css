@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Simply Playful';
+    src: url('../assets/simply_playful.otf');
+}
+
+body {
+    font-family: 'Simply Playful';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 20px;
+    border-color: pink;
+    border-style: dashed;
+
+    background: url("../assets/Background Texture.png"), center center repeat;
+    background-size: 15vh;
+}
+
+h1 {
+    font-size: 5vh;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    color: black;
+}
+
+button {
+    text-align: center;
+    font-family: inherit;
+    font-size: 3vh;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    background-color: pink;
+    border: none;
+    color: black;
+}
+
+button:active {
+  background-color: violet;
+}
+
+p {
+    font-size: 2vh;
+}
+
+hr {
+    width: 90%;
+    height: 0.05vh;
+    background-color: black;
+}
+
+#notes {
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* Table */
+table {
+    border-spacing: 75px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+/* tr {
+    
+} */
+
+td {
+    height: 200px;
+    background-color: pink;
+    text-align: center; 
+    vertical-align: middle;
+    overflow: hidden;
+
+    font-size: 2.5vh;
+}
+
+td:active {
+    background-color: violet;
+}
