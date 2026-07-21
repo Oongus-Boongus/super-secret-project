@@ -41,7 +41,7 @@ for (let i = 0; i < 50; i++) {
 
         // Set initial values from localstorage
         if (card_states[cell_id]) // unlocked
-            td.innerText = "Unlocked";
+            td.innerText = reasons[cell_id];
         else // locked
             td.innerText = "Locked";
 
@@ -50,8 +50,10 @@ for (let i = 0; i < 50; i++) {
             let current_cell_index = e.currentTarget.id;
 
             // Unlocked cell clicked
-            if (card_states[current_cell_index])
-                console.log("unlocked");
+            if (card_states[current_cell_index]) {
+                sessionStorage.setItem("current_card_text", reasons[current_cell_index]); // temp storage to send data to zoomed page
+                document.location.href = "card_zoomed.html";
+            }
 
             // Locked cell clicked
             else {
@@ -65,11 +67,13 @@ for (let i = 0; i < 50; i++) {
                 }
             }
             
-            // If the 
+            // If the unlock is confirmed, mark it as unlocked, save that state, and go to the zoomed version first
             if (is_unlock_confirmed) {
                 card_states[current_cell_index] = true;
                 localStorage.setItem("card_states", JSON.stringify(card_states));
-                document.location.href = "cards.html";
+
+                sessionStorage.setItem("current_card_text", reasons[current_cell_index]); // temp storage to send data to zoomed page
+                document.location.href = "card_zoomed.html";
             }
         });
 

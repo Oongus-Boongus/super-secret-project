@@ -32,8 +32,12 @@ button {
     height: auto;
     padding: 25px;
     background-color: pink;
-    border: none;
     color: black;
+
+    border-style: dotted;
+    border-color: black;
+    border-radius: 20px;
+    border-width: 15px;
 }
 
 button:active {
@@ -73,10 +77,62 @@ td {
     text-align: center; 
     vertical-align: middle;
     overflow: hidden;
+    padding: 20px;
 
     font-size: 2.5vh;
+
+    border-style: dotted;
+    border-color: black;
+    border-radius: 20px;
+    border-width: 15px;
 }
 
 td:active {
     background-color: violet;
+}
+
+#zoomed_card {
+    width: 90%;
+    height: 50%;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: dotted;
+    border-color: black;
+    border-radius: 20px;
+    border-width: 15px;
+}
+
+#top_button {
+    width: 90%;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0%);
+    margin: 0 auto;
+}
+
+#bottom_button {
+    width: 90%;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0%);
+    margin: 0 auto;
+}
+
+#card_text {
+    text-align: center; 
+    padding: 20px;
+    font-size: 3.5vh;
 }
