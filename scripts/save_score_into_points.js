@@ -11,8 +11,11 @@ function update_points() {
     }
 
     // Retrieve the score from storage
-    if (sessionStorage.getItem("score") === null)
+    if (sessionStorage.getItem("score") === null) {
         score = 0;
+        return; // If score does not exist, exit the func
+    }
+
     else {
         score = sessionStorage.getItem("score");
         score = Number(score);
