@@ -91,6 +91,7 @@ td:active {
     background-color: violet;
 }
 
+/* Zoomed Cards */
 #zoomed_card {
     width: 90%;
     height: 50%;
@@ -135,4 +136,15 @@ td:active {
     text-align: center; 
     padding: 20px;
     font-size: 3.5vh;
+}
+
+/* Games */
+iframe {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 12vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: none;
 }
