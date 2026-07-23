@@ -1,5 +1,5 @@
 let game_links = [
-    "https://gd.games/instant-builds/5ce93527-646c-44ab-bbc1-6049854f26a4",
+    "https://gd.games/instant-builds/7e03fe09-b9f0-4d6c-bf9b-f174de45ab9a",
     "B",
     "C",
     "D"
