@@ -32,7 +32,6 @@ let dialog_lines = [
     ["But Mysia will be very upset if the gift doesn't work!! And I really think you will love it!!", "assets/Default Pose.png"],
     ["And don't worry! The games place saves your points!! So if you need to leave", "assets/Jolly Arms Up Pose.png"],
     ["the next time you come back you will have all your points and lockpicks! And any locks you opened will stay open!", "assets/Jolly Pose.png"],
-    ["Just make sure not to close"],
     ["What's that? Where are the locks? And the game place?", "assets/Default Thinking Pose.png"],
     ["They are right behind me--OH", "assets/Thinking Pose.png"],
     ["I forgot to turn on the lights!! Here I will go flip the light switch!", "assets/Default Arms Up Pose.png"],
