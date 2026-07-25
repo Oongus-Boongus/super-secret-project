@@ -87,7 +87,16 @@ for (let i = 0; i < 50; i++) {
     card_table.appendChild(tr);
 }
 
-// UNCOMMENT THIS AFTER DEVELOPMENT
+// Check if all 100 cards are unlocked
+const allEqual = arr => arr.every( v => v === arr[0] );
+
+if (card_states[0] === true && allEqual(card_states)) {
+    // Confetti
+    startConfetti();
+    setTimeout(stopConfetti, 1000);
+}
+
+// TODO: UNCOMMENT THIS AFTER DEVELOPMENT
 // // If the user closes the page, save the card states
 // window.onbeforeunload = function(){
 //    localStorage.setItem("card_states", JSON.stringify(card_states));
