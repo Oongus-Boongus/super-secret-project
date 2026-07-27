@@ -1,8 +1,7 @@
 let game_links = [
-    "https://gd.games/instant-builds/30f8395f-3fcf-4cac-b152-f3e40cde9205",
+    "https://gd.games/instant-builds/286e34dc-1273-46ea-a30e-262d123fbdfd",
     "https://gd.games/instant-builds/632752f8-c90a-4b56-88c6-207ef12331de",
-    "https://gd.games/instant-builds/c7bd5812-8be4-42ec-899d-80a940ae6657",
-    "D"
+    "https://gd.games/instant-builds/bbaae4b6-482f-40f2-ae74-154d6e79a0be"
 ]
 
 // Set the iframe's source to the selected game

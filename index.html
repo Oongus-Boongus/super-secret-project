@@ -9,29 +9,44 @@
     <body>
         <div class="center wide_div">
             <div class="wide_div">
-                <h1>Enter Password: </h1>
+                <h1>&dash; TOP SECRET &dash;</h1>
+                <h3>Enter Password: </h3>
 
                 <input id="input_box" type="password" placeholder="Tap me to type here!">
                 
                 <br><br>
 
                 <button id="enter">Enter!</button>
+
+                <br><br>
+
+                <h5>Super Top Secret Hint: <br>The Month Our King Was Born (all big letters)</h5>
             </div>         
         </div>
-        
-    </body>
-    <script>
-        // If the cutscene flag is true, skip to the cards page
-        if (localStorage.getItem("hasSeenCutscene"))
-            document.location.href = "cards.html";
 
-        // Check the password
-        let password_box = document.getElementById("input_box")
+        <script>
+            // If the cutscene flag is true, skip to the cards page
+            if (localStorage.getItem("hasSeenCutscene"))
+                document.location.href = "cards.html";
 
-        document.getElementById("enter").onclick = function () {
-            if (password_box.value == "hello") {
-                document.location.href = "jinnie.html";
+            // Check the password
+            let password_box = document.getElementById("input_box");
+
+            password_box.addEventListener("keydown", function (e) {
+                if (e.code === "Enter")
+                    check_password();
+            });
+
+            document.getElementById("enter").onclick = () => {
+                if (password_box.value == "MARCH")
+                    document.location.href = "jinnie.html";
+            };
+
+            function check_password() {
+                if (password_box.value == "MARCH")
+                    document.location.href = "jinnie.html";
             }
-        };
-    </script>
+        </script>
+    </body>
+    
 </html>

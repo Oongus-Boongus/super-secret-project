@@ -29,14 +29,14 @@ shop_cards = Array.from(shop_cards);
 shop_cards.forEach(card => {
     card.addEventListener("click", function () {
         // Buy 1 Lockpick
-        if (card.id == "shop_card_1" && points >= 100) {
+        if (card.id == "shop_card_1" && points >= 150) {
             is_purchase_confirmed = confirm("Are you sure you want to buy this item?");
 
             // If the purchase is confirmed, decrement points, increment lockpicks, save the state, and refresh the page
             if (is_purchase_confirmed) {
                 is_purchase_confirmed = false;
                 
-                points -= 100;
+                points -= 150;
                 lockpicks += 1;
 
                 localStorage.setItem("points", points);
@@ -47,14 +47,14 @@ shop_cards.forEach(card => {
         }
 
         // Buy 5 Lockpicks
-        else if (card.id == "shop_card_2" && points >= 400) {
+        else if (card.id == "shop_card_2" && points >= 600) {
             is_purchase_confirmed = confirm("Are you sure you want to buy this item?");
 
             // If the purchase is confirmed, decrement points, increment lockpicks, save the state, and refresh the page
             if (is_purchase_confirmed) {
                 is_purchase_confirmed = false;
                 
-                points -= 400;
+                points -= 600;
                 lockpicks += 5;
 
                 localStorage.setItem("points", points);

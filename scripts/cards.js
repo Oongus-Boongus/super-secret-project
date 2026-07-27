@@ -9,7 +9,7 @@ if (JSON.parse(localStorage.getItem("card_states")) === null) {
     card_states = [];
 
     for (let i = 0; i < 100; i++) {
-        card_states[i] = false;
+        card_states[i] = true;
     }
 }
 else
@@ -88,16 +88,29 @@ for (let i = 0; i < 50; i++) {
 }
 
 // Check if all 100 cards are unlocked
-const allEqual = arr => arr.every( v => v === arr[0] );
+let are_all_unlocked = false;
+const allEqual = arr => arr.every( v => v === arr[0]);
 
-if (card_states[0] === true && allEqual(card_states)) {
+if (card_states[0] === true && allEqual(card_states))
+    are_all_unlocked = true;
+
+// Launch confetti if all unlocked
+if (are_all_unlocked) {
     // Confetti
     startConfetti();
     setTimeout(stopConfetti, 1000);
-}
 
-// TODO: UNCOMMENT THIS AFTER DEVELOPMENT
-// // If the user closes the page, save the card states
-// window.onbeforeunload = function(){
-//    localStorage.setItem("card_states", JSON.stringify(card_states));
-// }
+    // Add the secret button
+    let previous_button = document.getElementById("game_select_button");
+    let secret_button = document.createElement("button");
+    let icon = document.getElementById("arrow_icon").cloneNode(true);
+
+    secret_button.innerText = "Enter secret room... ";
+    secret_button.setAttribute("onclick", "document.location.href = 'secret.html';");
+    secret_button.appendChild(icon);
+
+    previous_button.parentNode.insertBefore(secret_button, previous_button.nextSibling);
+
+    for (let i = 0; i < 4; i++)
+        secret_button.parentNode.insertBefore(document.createElement("br"), secret_button);
+}
