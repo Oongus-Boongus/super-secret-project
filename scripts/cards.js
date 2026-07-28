@@ -9,7 +9,7 @@ if (JSON.parse(localStorage.getItem("card_states")) === null) {
     card_states = [];
 
     for (let i = 0; i < 100; i++) {
-        card_states[i] = true;
+        card_states[i] = false;
     }
 }
 
