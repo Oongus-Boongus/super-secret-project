@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>We ZOOOOOMMMM In!!!</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="styles/cards.css">
+    </head>
+    <body>
+        <div id="confetti_holder" height="0"></div>
+        <button id="top_button" onclick="sessionStorage.clear(); document.location.href='secret.html';">
+            Go Back to Prize Page!
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+            </svg>
+        </button>
+
+        <div id="zoomed_card">
+            <p id="card_text"></p>
+        </div>
+
+        <button id="bottom_button" onclick="sessionStorage.clear(); document.location.href='secret.html';">
+            Go Back to Prize Page!
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+            </svg>
+        </button>
+
+        <script src="scripts/confetti.js"></script>
+        <script>
+            // Load card from session storage
+            let card_text = document.getElementById("card_text");
+            let current_card_text = sessionStorage.getItem("current_card_text");
+
+            card_text.innerHTML = current_card_text;
+
+            // Confetti
+            startConfetti();
+            setTimeout(stopConfetti, 1000);
+        </script>
+        
+    </body>
+</html>

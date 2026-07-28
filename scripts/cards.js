@@ -12,15 +12,17 @@ if (JSON.parse(localStorage.getItem("card_states")) === null) {
         card_states[i] = true;
     }
 }
+
 else
     card_states = JSON.parse(localStorage.getItem("card_states"));
 
 // Retrieve the lockpick count from storage
 if (localStorage.getItem("lockpicks") === null)
     lockpicks = 0;
-else
+else {
     lockpicks = localStorage.getItem("lockpicks");
     lockpicks = Number(lockpicks);
+}
 
 // Update the counters at the top of the page
 let unlocks = 0;
@@ -60,7 +62,7 @@ for (let i = 0; i < 50; i++) {
             else {
                 // Only ask for confirmation if there is a lockpick available
                 if (lockpicks > 0) {
-                    is_unlock_confirmed = confirm("Are you sure you want to unlock this cell?");
+                    is_unlock_confirmed = confirm("Are you sure you want to unlock this card?");
                     
                     // Decrement and save the lockpick value
                     lockpicks -= 1;

@@ -32,7 +32,7 @@ var reasons = [
     "How much you hate Biondo (HE GOES IN SUN RAHHHH)",
     "Whenever we do your little hair routine hehe (PURPLE SPRAY WHOOOSSSS)",
     "When we play roblox and you say 'wheres my boyfriend?' >///<",
-    "When you make me soups in 99 nights :p",
+    "Youre so good at makeup omggg",
     "You build and decorate the whole base in 99 nights!",
     "When you say 'ooo shopping!' in 99 nights",
     "Whenever you do a phone makeover (the outside and the screens) and then show me :3",
