@@ -5,17 +5,21 @@ let lockpicks;
 let is_unlock_confirmed;
 
 let prizes = [
-    "<img src='assets/favicon.png'> prize 1",
-    "prize 2",
-    "prize 3",
-    "prize 4"
+    "<img class='prize' src='assets/prizes/1.jpg'> <br> no my mirror is NOT dirty idk what you mean",
+    "<img class='prize' src='assets/prizes/2.jpg'> <br> :p",
+    "<img class='prize' src='assets/prizes/3.jpg'> <br> do you have games on your phone OwO",
+    "<img class='prize' src='assets/prizes/4.jpg'> <br> idk i just wanted to show my gloves :3",
+    "<audio controls><source src='assets/prizes/5.mp3' type='audio/mpeg'>Error! Message Mysia!</audio> <br> It's really shit lmao idk why i did this",
+    "<audio controls><source src='assets/prizes/6.mp3' type='audio/mpeg'>Error! Message Mysia!</audio> <br> Hehe story timeeee",
+    "<img class='prize' src='assets/prizes/7.png'> <br> i was gonna do a full portrait of you but i suck at drawing people, so here is my drawing of just your eyes :3",
+    "<img class='prize' src='assets/prizes/8.png'> <br> And yes, ofc you get Kirby Art :)"
 ];
 
 // Retrieve the card states from storage
 if (JSON.parse(localStorage.getItem("prize_states")) === null) {
     prize_states = [];
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < prizes.length; i++) {
         prize_states[i] = false;
     }
 }
@@ -32,7 +36,7 @@ else {
 }
 
 // Create the prize cards
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 4; i++) {
     let tr = document.createElement("tr");
 
     for (let j = 0; j < 2; j++) {
