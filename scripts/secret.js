@@ -9,7 +9,7 @@ let prizes = [
     "<img class='prize' src='assets/prizes/2.jpg'> <br> :p",
     "<img class='prize' src='assets/prizes/3.jpg'> <br> do you have games on your phone OwO",
     "<img class='prize' src='assets/prizes/4.jpg'> <br> idk i just wanted to show my gloves :3",
-    "<audio controls><source src='assets/prizes/5.mp3' type='audio/mpeg'>Error! Message Mysia!</audio> <br> It's really shit lmao idk why i did this",
+    "oopsies this one broke! i be bacc soon :3",
     "<audio controls><source src='assets/prizes/6.mp3' type='audio/mpeg'>Error! Message Mysia!</audio> <br> Hehe story timeeee",
     "<img class='prize' src='assets/prizes/7.png'> <br> i was gonna do a full portrait of you but i suck at drawing people, so here is my drawing of just your eyes :3",
     "<img class='prize' src='assets/prizes/8.png'> <br> And yes, ofc you get Kirby Art :)"
